@@ -1,0 +1,18 @@
+<%
+ com.kk.Operation a1=new com.kk.Operation();
+ int d=a1.addition(3, 6);
+ int e=a1.subtraction(76, 45);
+ int f=a1.multiplication(3, 5);
+ int g=a1.division(4, 2);
+ out.println("Sangram Ghorpade 248624<br>");
+ out.println("Add:"+d);
+ out.println("<br>Sub:"+e);
+ out.println("<br>Mul:"+f);
+ out.println("<br>Div:"+g);
+ %>
+
+
+MyWebService_Service service=new MyWebService_Service();
+final MyWebService proxy=service.getMyWebServicePort();
+System.out.println("Sangram Ghorpade 248624");
+System.out.println(proxy.square(6.4));
